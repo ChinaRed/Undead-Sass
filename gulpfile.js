@@ -3,7 +3,7 @@ var gulp = require ('gulp');
 
   gulp.task('sass', function(){
 
-    return gulp.src('./sass/*.scss')
+    return gulp.src('./sass/**/*.scss')
     .pipe(sass( { errLogToConsole: true } ))
     .pipe(gulp.dest('./public/css'));
 
@@ -11,7 +11,7 @@ var gulp = require ('gulp');
 
   gulp.task('watch_sass', function() {
 
-    gulp.watch('./sass/*.scss', ['sass']);
+    gulp.watch('./sass/**/*.scss', ['sass']);
 
   });
 

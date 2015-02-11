@@ -1,15 +1,157 @@
-$baby_blue: #40C2C6;
-$aqua_blue: #389FA8;
-$dark_blue: #14273D;
-$off_white: #EFF9EC;
-
-
-
+@import "partials/reset";
+@import "partials/settings";
+@import "http://fonts.googleapis.com/css?family=Droid+Serif:400,700.css";
 
 html{
-  background-color: $baby_blue;
+  background-color: $off_white;
+ 
+ @media #{$large-up} {
+    background-color: $light_blue;
+  }
 }
 
 body{
   background-color: $off_white;
+  font-family: 'Droid Serif', Serif;
+  color: $dark_blue;
+  line-height: 27px;
+  
+  @media #{$large-up} {
+  width: 900px;
+  margin: auto;
+  }
 }
+
+h1{
+  font-size: 1.1em;
+  letter-spacing: 5px;
+  color: $light_blue;
+  text-align: center;
+  text-transform: uppercase;
+  border-style: solid none;
+  border-color: $light_blue;
+  border-width: 1px;
+  padding: 30px;
+
+  @media #{$small-only} {
+    background-color: $aqua_blue;
+    height: 26px;
+    font-size: 0.7em;
+    letter-spacing: 4px;
+  }
+}
+
+h2{
+  font-size: 2em;
+
+  a{
+    border-bottom: 1px;
+    border-style: dashed;
+    border-color: $light_blue;
+  }
+}
+
+h3{
+  color: $aqua_blue;
+  padding: 10px 0 38px;
+
+  a{
+    border-bottom: 1px;
+    border-style: dashed;
+    border-color: $light_blue;
+  }
+}
+
+h4{
+  color: $aqua_blue;
+  font-size: 1.3em;
+
+}
+
+a{
+  text-decoration: none;
+  color: $dark_blue;
+
+  &:hover{
+    color: $light_blue;
+  }
+}
+
+.nav{
+  text-align: center;
+  padding: 9px;
+  @media #{$small-only} {
+    display: none;
+  }
+  li{
+    display: inline;
+    padding: 0 15px;
+  }
+}
+
+.content{
+  padding: 40px;
+
+  @media #{$large-up} {
+    border-right: solid 1px $light_blue;
+    float: left;
+    width: 60%;
+  }
+}
+
+aside{
+  padding: 30px 40px 10px;
+
+  p{
+    padding-top: 10px;
+  }
+  
+  .read_more{
+    color: $light_blue;
+    background-color: $aqua_blue;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    margin: 38px 0
+  }
+
+  @media #{$small-only} {
+    display: none;
+  }
+
+  @media #{$large-up} {
+    float: left;
+    width: 21%;
+  }
+}
+
+footer{
+  border-top: solid;
+  border-width: 1px;
+  border-color: $light_blue;
+  height: 60px;
+
+  .left{
+    display: none;
+    @media #{$large-up} {
+      display: block;
+      padding: 15px 40px;
+      float: right;   
+    }
+  }
+
+  .right{
+    text-align: center;
+    padding: 15px 40px;
+    @media #{$large-up} {
+      float: left;
+      text-align: initial;
+    }
+  }
+}
+
+.footer_links li{
+  display: inline;
+  padding: 0 5px;
+}
+
