@@ -122,6 +122,9 @@ aside {
     text-align: center;
     padding: 15px;
     margin: 38px 0; }
+    aside .read_more:hover {
+      color: #389FA8;
+      background-color: #40C2C6; }
   @media only screen and (max-width : 640px) {
     aside {
       display: none; } }

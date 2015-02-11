@@ -112,8 +112,13 @@ aside{
     display: block;
     text-align: center;
     padding: 15px;
-    margin: 38px 0
+    margin: 38px 0;
+    
+  &:hover{
+    color: $aqua_blue;
+    background-color: $light_blue;
   }
+}
 
   @media #{$small-only} {
     display: none;
