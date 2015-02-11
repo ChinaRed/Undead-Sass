@@ -31,13 +31,14 @@ h1{
   border-style: solid none;
   border-color: $light_blue;
   border-width: 1px;
-  padding: 30px;
+  padding: 28px;
 
   @media #{$small-only} {
     background-color: $aqua_blue;
-    height: 26px;
+    padding: 0;
     font-size: 0.7em;
     letter-spacing: 4px;
+    border: none;
   }
 }
 
@@ -53,7 +54,7 @@ h2{
 
 h3{
   color: $aqua_blue;
-  padding: 10px 0 38px;
+  padding: 5px 0 38px;
 
   a{
     border-bottom: 1px;
@@ -95,12 +96,13 @@ a{
   @media #{$large-up} {
     border-right: solid 1px $light_blue;
     float: left;
-    width: 60%;
+    width: 70%;
+    box-sizing: border-box;
   }
 }
 
 aside{
-  padding: 30px 40px 10px;
+  padding: 35px 40px 10px;
 
   p{
     padding-top: 10px;
@@ -126,7 +128,8 @@ aside{
 
   @media #{$large-up} {
     float: left;
-    width: 21%;
+    width: 30%;
+    box-sizing: border-box;
   }
 }
 
